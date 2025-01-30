@@ -1,0 +1,141 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform</title>
+    
+    <style>
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #a6330a;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        header nav ul li {
+            margin-right: 20px;
+        }
+        
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .course-progress {
+            background-color: #f7f7f7;
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background-color: #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .progress-bar-fill {
+            background-color: #333;
+            height: 100%;
+        }
+        
+        .course-modules {
+            background-color: #f7f7f7;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        
+        .course-modules ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .course-modules li {
+            margin-bottom: 20px;
+        }
+        
+        .completed {
+            color: #2ecc71;
+        }
+        
+        .in-progress {
+            color: #ffc107;
+        }
+        
+        .not-started {
+            color: #e74c3c;
+        }
+        
+        </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="course-progress">
+            <h2>Course Progress</h2>
+            <div class="progress-bar">
+                <div class="progress-bar-fill" style="width: 60%;"></div>
+            </div>
+            <p>You have completed 60% of the course.</p>
+        </section>
+        <section class="course-modules">
+            <h2>Course Modules</h2>
+            <ul>
+                <li>
+                    <h3>Module 1: Introduction</h3>
+                    <p>Status: <span class="completed">Completed</span></p>
+                </li>
+                <li>
+                    <h3>Module 2: Fundamentals</h3>
+                    <p>Status: <span class="in-progress">In Progress</span></p>
+                </li>
+                <li>
+                    <h3>Module 3: Advanced Topics</h3>
+                    <p>Status: <span class="not-started">Not Started</span></p>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
+
+
+
